@@ -1,0 +1,29 @@
+<html>
+      <head>
+            <title>Trabalhando com object</title>
+
+            <script>
+            
+                     var produto = new Object;
+
+                     var nome = "Caneta";
+                     var preco = 1.99;
+                     var cor = "azul";
+
+                     function retornarInfo() {
+
+                         return "Meu Produto" + this.nome + ", Custa:" + this.preco; 
+
+                     }
+
+                      produto.info = retornarInfo;
+
+                     alert(produto.info);
+            
+            </script>
+      </head>
+
+      <body>
+
+      </body>
+</html>
